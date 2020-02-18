@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Mi Titulo
+        </title>
+        <meta charset = "UTF-8"/>
+    </head>
+    <body>
+        <!-- This is a comment-->
+        <!--
+            Todo
+            Esto
+            Tambien
+            -->
+        <h1>
+            Mi Header
+        </h1>
+        <h2>
+            Mi Header
+        </h2>
+        <h3>
+            Mi Header
+        </h3>
+        <h4>
+            Mi Header
+        </h4>
+        <h5>
+            Mi Header
+        </h5>
+        <h6>
+            Mi Header
+        </h6>
+
+        <p>
+            Paragraph
+        </p>
+
+        <!--img src= "/path/to/image" alt="This is an image of a dog"/-->
+        <!-- "/"baja un nivel "./"busca en el nivel actual "../" sube un nivel  -->
+        <img src= "./assets/dog.png" alt="This is an image of a dog"/>
+        </img>
+
+        <ul>
+            <li>
+                One
+            </li>
+            <li>
+                Two
+            </li>
+            <li>
+                Three
+            </li>
+        </ul>
+
+        <ol>
+            <li>
+                Uno
+            </li>
+            <li>
+                Dos
+            </li>
+            <li>
+                Tres
+            </li>
+        </ol>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Column1
+                    </th>
+                    <th>
+                        Column2
+                    </th>
+                    <th>
+                        Column3
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Data1
+                    </td>
+                    <td>
+                        Data2
+                    </td>
+                    <td>
+                        Data3
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        Meta1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Meta2
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Meta3
+                    </td>
+                </tr>
+                    <!-- tr = table row, td = table data--> 
+                <tr>
+                    <td>
+                        Foot1
+                    </td>
+                    <td>
+                        Foot2
+                    </td>
+                    <td>
+                        Foot3
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+
+        <form>
+            <fieldset>
+                <legend>
+                    title of form
+                </legend>
+                <div>
+                    <label for ="user-name">
+                        username:
+                    </label>
+
+                    <input type = "text" id= "user-name" class="info" name="user" value="Test" />
+                    <!-- id no debes repetirlo en el html, la class si se puede repetir-->
+                    <!-- name solo se usa para contenido de una form--> 
+                    <!-- Naming class and id rules
+                        Never begin with a number
+                        Begin with lower case letter
+                        you can follow with [a-z][A-Z][0-9][-_]
+                    --> 
+                </div>
+                    <input type = "password">
+                    <input type = "number">
+                    <input type = "email">
+                    <!-- <input type = "date"> -->
+                    <!-- <input type = "tel"> -->
+                    <!-- <input type = "submit" value="submit"> //este no puede vivir fuera de una form, boton si -->
+                    <!-- <button type = "submit"> //solo se necesita el type adentro de boton si esta dentro de la form
+                            Submit
+                    </button>
+                    -->
+
+                <div>
+                    <label for = "gender-m">
+                        Male
+                    </label>
+                    <input type="radio" id="gender-m" name="gender" value="Male" />
+                </div>
+                <div>
+                    <label for = "gender-f">
+                        Female
+                    </label>
+                    <input id="gender-f" type="radio" name="gender" value="Female" />
+                    <!-- <input type = "checkbox"> es parecido a radio-->
+                </div>
+                <select name="country">
+                    ><option value="MX">
+                        Mexico
+                    </option>
+                    ><option value="FR">
+                        France
+                    </option>
+                </select>
+
+                <!-- <span> </span> es un bloque como div, pero de jerarquia baja
+                span solo puede tener otro span, o texto dentro, y a diferencia de div
+                que es un bloque de estructura vertical, span es horizontal -->
+
+                <textarea>
+
+                </textarea>
+
+            </fieldset>
+        </form>
+
+
+    </body>
+</html>
